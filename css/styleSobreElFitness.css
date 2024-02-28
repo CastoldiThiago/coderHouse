@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+    color: #242423;
+}
+
+#header {
+    grid-area: header;
+    background-color: #F5CB5C;
+}
+#main {
+    grid-area: main;
+    background-color: #E8EDDF;
+    font-size: 1.3rem;
+}
+#footer {
+    grid-area: footer;
+    background-color: #CFDBD5;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+
+.listContainer li, .listContainer li a{
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.2rem;
+    font-size: 1.4rem;
+}
+
+#header h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+.infoContainer p {
+    padding: 0rem 1.5rem 1.5rem 1.5rem
+}
+.infoContainer h2 {
+    padding-bottom: 1.5rem;
+
+}
+h2 {
+    font-size: 2.5rem;
+}
+.infoContainer img {
+    height: 34vh;
+}
+
+.ventajas {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+}
+.listaVentajas {
+    text-align: justify;
+    padding: 1.5rem;
+}
+
+.comunidad {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.footerUl {
+    padding: 1.5rem;
+    border-top: 1px solid #242423;
+    list-style-type: none;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    .infoContainer img {
+        height: auto;
+        max-height: 60vh;
+        padding: 0rem 6rem 0rem 6rem;
+    }
+}
